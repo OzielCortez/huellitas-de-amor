@@ -3,7 +3,6 @@ require('dotenv').config();
 const { conn } = require("./src/db.js");
 const fillHomes = require("./src/utils/fillHomes.js");
 const fillPets = require("./src/utils/fillPets.js");
-const port = process.env.port || 3000;
 
 // Syncing all the models at once.
 conn.sync({
