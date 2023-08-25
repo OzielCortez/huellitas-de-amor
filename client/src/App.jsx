@@ -20,7 +20,7 @@ import Pets from './components/Dashboard/Pets';
 import Users from './components/Dashboard/Users';
 import AdoptionHouses from './components/Dashboard/AdoptionHouses';
 import Donations from './components/Dashboard/Donations';
-import { AuthProvider } from "./context/authContext";
+import { AuthProvider } from "./context/AuthContext";
 
 
 function App() {
