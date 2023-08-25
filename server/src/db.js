@@ -6,7 +6,7 @@ const { DB_USER, DB_PASSWORD, DB_HOST, DB_DEPLOY } = process.env;
 
 
 const sequelize = new Sequelize(
-  DB_DEPLOY,
+  "postgresql://postgres:Z0tikn0eid2PFU9mRokJ@containers-us-west-38.railway.app:6285/railway",
   // `postgres://postgres:22511290@localhost/huellitas`,
 	{
 		logging: false, // set to console.log to see the raw SQL queries
