@@ -7,7 +7,7 @@ const fillPets = require("./src/utils/fillPets.js");
 // Syncing all the models at once.
 conn.sync({
   force: false}).then(() => {
-  server.listen(3001, () => {
+  server.listen(3001,"0.0.0.0", () => {
     //fillPets();
     // fillHomes()
     console.log(`%s listening at 3001`); // eslint-disable-line no-console
