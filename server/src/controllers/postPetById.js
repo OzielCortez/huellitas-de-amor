@@ -12,7 +12,6 @@ const postPetById = async ({
   peso,
   casaid,
   especie,
-  /* casaDeAdopcionId */
 }) => {
   try {
     if (
@@ -24,8 +23,7 @@ const postPetById = async ({
       !tamano ||
       !raza ||
       !peso ||
-      !especie /* || 
-      !casaDeAdopcionId */
+      !especie 
     ) {
       return { status: 401, message: "Faltan datos" };
     }
@@ -51,7 +49,7 @@ const postPetById = async ({
     }
 
     await createPet.setEspecie(mascEsp);
-    await createPet.setCasaDeAdopcion(casaDeAdopcionId);
+   /*  await createPet.setCasaDeAdopcion(casaDeAdopcionId); */
     return createPet;
 
     //Llaves foraneas
