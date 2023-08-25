@@ -8,9 +8,9 @@ const port = process.env.port || 3000;
 // Syncing all the models at once.
 conn.sync({
   force: false}).then(() => {
-  server.listen(port, () => {
+  server.listen(3001, () => {
     fillPets();
     // fillHomes()
-    console.log(`%s listening at ${port}`); // eslint-disable-line no-console
+    console.log(`%s listening at 3001`); // eslint-disable-line no-console
   });
 });
