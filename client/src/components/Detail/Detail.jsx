@@ -12,7 +12,7 @@ import confetti from "canvas-confetti";
 
 import iconMacho from "../../assets/macho.png";
 import iconHembra from "../../assets/hembra.png";
-import { useAuth } from "../../context/authContext";
+import { useAuth } from "../../AuthContext/AuthContext";
 
 export default function Detail() {
   const { id } = useParams();
